@@ -1,3 +1,4 @@
+import headerTemplate from '../src/header-template.js';
 const test = QUnit.test;
 
 QUnit.module('header template');
@@ -17,11 +18,3 @@ test('header template', function(assert) {
     //Assert
     assert.htmlEqual(html, expected);
 });
-
-function headerTemplate() {
-    return /*html*/`
-    <header>
-        <h1>Image Gallery!!!</h1>
-    </header>
-    `;
-}
