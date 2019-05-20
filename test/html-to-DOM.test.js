@@ -1,3 +1,4 @@
+import htmlToDOM from '../src/index/html-to-DOM.js';
 const test = QUnit.test;
 
 QUnit.module('html to dom');
@@ -17,12 +18,3 @@ test('converts html to dom', function(assert) {
     assert.equal(dom.tagName, 'SPAN');
     assert.equal(dom.textContent, 'Hello world!');
 });
-
-function htmlToDOM(html) {
-    const template = document.createElement('template');
-    template.innerHTML = html;
-    const content = template.content;
-    const firstElementChild = content.firstElementChild;
-
-    return firstElementChild;
-}
