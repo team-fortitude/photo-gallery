@@ -8,7 +8,7 @@ test('make an image template', function(assert) {
     //Arrange
     // Set up your parameters and expectations
     const image = {
-        src: 'test src',
+        url: 'test src',
         title: 'This is a title'
     };
 
